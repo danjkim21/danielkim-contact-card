@@ -1,0 +1,246 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h1 {
+  font-size: 2.25rem;
+}
+address {
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+i {
+  font-size: 1.6rem;
+}
+input,
+button {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  font-size: 1.6rem;
+  color: #000000;
+  background-color: #fcefe3;
+  letter-spacing: 1px;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 42rem;
+  /* box-shadow: 8px 5px 30px #171426; */
+  /* background-color: #171426; */
+}
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.img-container {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+}
+
+.info-container {
+  margin: 1.5rem 0;
+}
+.about {
+  margin: 0.5rem 0;
+  color: #655f5b;
+}
+.info-links {
+  width: 100%;
+}
+
+.info-links > a {
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.1s ease-out;
+  /* box-shadow: 1px 1px 7px #1c61a75b; */
+}
+
+address > h3 {
+  font-weight: 400;
+}
+address > p {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+address .contactLinks {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.contactLinks {
+  transition: all 0.15s ease-out;
+}
+.contactLinks:hover {
+  /* text-decoration: underline; */
+  color: rgb(255, 145, 0);
+}
+.flexTwo {
+  display: flex;
+  justify-content: flex-start;
+}
+.flexTwo i {
+  width: 20%;
+  color: #aeb5be;
+}
+
+.wrap-collabsible {
+  border-radius: 4px;
+  /* cursor: pointer; */
+  margin-top: 1rem;
+  /* box-shadow: 1px 1px 7px #1c61a75b; */
+}
+.btn2,
+.wrap-collabsible {
+  margin-left: 2px;
+  border: 1px solid #aeb5be;
+  color: #000000;
+}
+.info-links > a:hover,
+.info-links > a:focus {
+  /* box-shadow: 1px 1px 7px #1c61a75b; */
+  transform: scale(1.025, 1.01);
+}
+
+.lower {
+  width: 100%;
+  /* background-color: #231f3a; */
+  text-align: left;
+  padding: 2rem;
+}
+
+.lower .skills-heading {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.lower .skills ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 0.8rem;
+}
+
+.lower .skills ul li {
+  font-size: 1.4rem;
+  background-color: #fad6b6;
+  /* border: 1px solid; */
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  background: #fcefe3;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: 0.7rem;
+  transform: translateY(-2px);
+
+  transition: transform 0.2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  /* box-shadow: 10px 15px 10px -5px  #1b192573; */
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom: 1px solid #aeb5be;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #fffcfa;
+}
+
+.collapsible-content .content-inner {
+  background: #fffcfa;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 2rem 2rem;
+}
