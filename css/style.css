@@ -116,10 +116,12 @@ address .contactLinks {
   margin-bottom: 2rem;
   text-align: left;
 }
-.contactLinks {
+.contactLinks,
+.downloadContactBtn {
   transition: all 0.15s ease-out;
 }
-.contactLinks:hover {
+.contactLinks:hover,
+.downloadContactBtn:hover {
   color: rgb(255, 145, 0);
 }
 .flexTwo {
@@ -143,6 +145,20 @@ address .contactLinks {
   border: 1px solid #aeb5be;
   color: #000000;
 }
+
+.flexOne{
+  display: flex;
+  justify-content: center;
+}
+
+.downloadContactBtn {
+  width: 85%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
 .info-links > a:hover,
 .info-links > a:focus,
 .wrap-collabsible:hover {

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Daniel Jay-Young Kim
+N;CHARSET=UTF-8:Kim;Daniel;Jay-Young;;
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:dan.jkim21@gmail.com
+TEL;TYPE=CELL:202-304-7020
+ADR;CHARSET=UTF-8;TYPE=HOME:;;;Portland;Maine;;United States
+TITLE;CHARSET=UTF-8:Software Engineer
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/danieljayyoungkim/
+X-SOCIALPROFILE;TYPE=Portfolio:https://daniel-jkim.com/
+X-SOCIALPROFILE;TYPE=GitHub:https://github.com/danjkim21/
+
+REV:2022-05-10T17:08:57.776Z
+END:VCARD
